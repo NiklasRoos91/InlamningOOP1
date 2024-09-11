@@ -1,12 +1,22 @@
 ﻿namespace OOP1
 {
     // Abstraktion
-    abstract class Profession
+    abstract class Sport
     {
-        public string name;
-        public int age;
-        public int height;
-        public int pay;
+        public abstract void Movement();
+        public abstract void GameLength();
+    }
 
+    class IceHockey : Sport
+    {
+        public override void Movement()
+        {
+            Console.WriteLine("I hockey åker man skridskor");
+        }
+
+        public override void GameLength() 
+        {
+            Console.WriteLine("En hockey match är 60 minuter lång indelad i 15 minuters perioder!");
+        }
     }
 }
